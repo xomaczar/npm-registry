@@ -1,0 +1,9 @@
+{{#if hasBlock}}
+  {{yield columnValue columnMeta}}
+{{else}}
+  {{columnValue.name}}
+
+  {{ember-th/sort-indicator columnMeta=columnMeta}}
+
+  {{ember-th/resize-handle columnMeta=columnMeta}}
+{{/if}}
